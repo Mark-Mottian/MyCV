@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Makes the page scale properly on phones and tablets -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mark Mottian | Personal Webpage</title>
+
+    <!-- Bootstrap helps with layout, spacing, and responsive columns -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons gives us the small icons used in headings -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Custom stylesheet for colours, cards, spacing and typography -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Main Page Container -->
+    <div class="container my-4">
+      <div class="row g-4">
+        <!-- Left Column: Sidebar -->
+        <aside class="col-12 col-lg-4">
+          <div class="sidebar card shadow-sm">
+            <div class="card-body">
+              <div class="text-center">
+                <!-- Circular Profile Image -->
+                <div class="avatar-wrap mx-auto mb-3">
+                  <img
+                    src="profile_photo.jpeg"
+                    alt="Profile photo of Mark Mottian"
+                    class="avatar"
+                  />
+                </div>
+
+                <h1 class="name mb-0">Mark Mottian</h1>
+                <p class="role mb-3">Transitioning into Software Development</p>
+              </div>
+
+              <hr class="sidebar-hr" />
+
+              <!-- Menu links scroll to sections on the same page -->
+              <section id="menu" class="mb-4">
+                <h2 class="sidebar-title">
+                  <i class="bi bi-list-ul me-2"></i>Menu
+                </h2>
+                <nav>
+                  <ol class="menu">
+                    <li><a href="#profile">Personal Details</a></li>
+                    <li><a href="#bio">Bio</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#work_experience">Work Experience</a></li>
+                    <li><a href="#contact_details">Contact Details</a></li>
+                  </ol>
+                </nav>
+              </section>
+
+              <!-- Basic Personal Information -->
+              <section id="profile" class="mb-4">
+                <h2 class="sidebar-title">
+                  <i class="bi bi-person-badge me-2"></i>Personal Details
+                </h2>
+                <ul class="sidebar-list">
+                  <li><span class="label">Full Name:</span> Mark Wesley Mottian</li>
+                  <li><span class="label">Title:</span> Dr</li>
+                  <li><span class="label">Location:</span> South Africa</li>
+                </ul>
+              </section>
+
+              <!-- Public Contact Details -->
+              <section id="contact_details" class="mb-0">
+                <h2 class="sidebar-title">
+                  <i class="bi bi-envelope me-2"></i>Contact
+                </h2>
+                <ul class="sidebar-list">
+                  <li>
+                    <i class="bi bi-envelope me-2"></i>
+                    <a href="mailto:mark.mottian@gmail.com">mark.mottian@gmail.com</a>
+                  </li>
+                  <li>
+                    <i class="bi bi-github me-2"></i>
+                    <a
+                      href="https://github.com/Mark-Mottian"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      github.com/Mark-Mottian
+                    </a>
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Right Column: Main Content -->
+        <main class="col-12 col-lg-8">
+          <!-- Bio Section -->
+          <section id="bio" class="content card shadow-sm mb-4">
+            <div class="card-body">
+              <h2 class="content-title">
+                <i class="bi bi-person-lines-fill me-2"></i>Bio
+              </h2>
+
+              <p>
+                I am a medical doctor by profession who is now transitioning into software development.
+              </p>
+
+              <p>
+                I completed six years of medical school, followed by two years as an intern doctor and one year of community service. While I value my medical training, I have always maintained a strong passion for software. This interest began in high school, where I took Information Technology as a subject. After completing my community service, I made the decision to pursue software development instead of immediately specialising in medicine.
+              </p>
+
+              <p>
+                My goal is to become a full-stack developer. This does not mean I will abandon medicine, but rather combine both fields. I want to build products that people can actually use, and I believe that my background in medicine and software places me in a unique position to approach problems from a different perspective.
+              </p>
+            </div>
+          </section>
+
+          <!-- Skills and Competencies -->
+          <section id="skills" class="content card shadow-sm mb-4">
+            <div class="card-body">
+              <h2 class="content-title">
+                <i class="bi bi-tools me-2"></i>Skills & Competencies
+              </h2>
+
+              <div class="row g-4">
+                <!-- (Medical) Hard Skills -->
+                <div class="col-12 col-md-6">
+                  <h3 class="subheading">Hard Skills</h3>
+                  <ul class="clean-list">
+                    <li>Patient history taking and clinical examination</li>
+                    <li>Formulating differential diagnoses</li>
+                    <li>Interpreting laboratory and imaging results</li>
+                    <li>Writing accurate clinical notes and documentation</li>
+                    <li>Following clinical guidelines and protocols</li>
+                  </ul>
+                </div>
+
+                <!-- (Medidcal) Soft Skills -->
+                <div class="col-12 col-md-6">
+                  <h3 class="subheading">Soft Skills</h3>
+                  <ul class="clean-list">
+                    <li>Clinical reasoning</li>
+                    <li>Problem solving</li>
+                  </ul>
+
+                  <!-- Software Skills -->
+                  <h3 class="subheading mt-4">Tech Skills</h3>
+                  <ul class="clean-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Bootstrap</li>
+                    <li>Git</li>
+                    <li>GitHub</li>
+                    <li>Basic debugging</li>
+                    <li>Responsive web design</li>
+                    <li>Working with functions, arrays, and objects</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Education Section -->
+          <section id="education" class="content card shadow-sm mb-4">
+            <div class="card-body">
+              <h2 class="content-title">
+                <i class="bi bi-mortarboard me-2"></i>Education
+              </h2>
+
+              <div class="timeline">
+                <div class="timeline-item">
+                  <div class="timeline-head">
+                    <h3 class="subheading mb-1">
+                      Stellenbosch University Full Stack Web & Software Engineer Bootcamp
+                    </h3>
+                    <span class="date-pill">2026 – Current</span>
+                  </div>
+                  <p class="muted mb-0">HyperionDev</p>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-head">
+                    <h3 class="subheading mb-1">
+                      Bachelor of Medicine and Bachelor of Surgery (MBBCh)
+                    </h3>
+                    <span class="date-pill">2017 – 2022</span>
+                  </div>
+                  <p class="muted mb-0">University of the Witwatersrand</p>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-head">
+                    <h3 class="subheading mb-1">National Senior Certificate</h3>
+                    <span class="date-pill">2016</span>
+                  </div>
+                  <p class="muted mb-2">Distinctions in:</p>
+                  <ul class="clean-list">
+                    <li>English Home Language</li>
+                    <li>Afrikaans First Additional Language</li>
+                    <li>Information Technology</li>
+                    <li>Life Sciences</li>
+                    <li>Mathematics</li>
+                    <li>Physical Science</li>
+                    <li>Advanced Programme Mathematics</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Work Experience Section -->
+          <section id="work_experience" class="content card shadow-sm">
+            <div class="card-body">
+              <h2 class="content-title">
+                <i class="bi bi-briefcase me-2"></i>Work Experience
+              </h2>
+
+              <div class="timeline">
+                <div class="timeline-item">
+                  <div class="timeline-head">
+                    <h3 class="subheading mb-1">Intern Medical Doctor</h3>
+                    <span class="date-pill">2023 – 2025</span>
+                  </div>
+                  <p class="muted mb-0">Chris Hani Baragwanath Academic Hospital</p>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-head">
+                    <h3 class="subheading mb-1">Community Service Medical Officer</h3>
+                    <span class="date-pill">2025 – 2026</span>
+                  </div>
+                  <p class="muted mb-0">Stellenbosch Provincial Hospital</p>
+                </div>
+              </div>
+
+              <p class="mt-3 mb-0"><em>Formal references available on request.</em></p>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

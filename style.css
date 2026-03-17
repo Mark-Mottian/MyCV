@@ -1,0 +1,267 @@
+/* 
+  These variables store colours in one place.
+  If you want to change the theme later, you can change it here
+  instead of searching through the whole file.
+*/
+:root {
+  --sidebar: #2f2d4f;
+  --sidebar-text: #e9e7ff;
+  --muted: #6b7280;
+  --paper: #ffffff;
+  --bg: #f4f6f8;
+  --border-soft: #eef0f3;
+  --date-bg: #eef2ff;
+  --date-text: #3730a3;
+}
+
+/* 
+  Styles the whole page.
+  system-ui uses the default modern font from the user's device.
+*/
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: #111827;
+}
+
+/* 
+  Styles the dark sidebar card on the left.
+*/
+.sidebar {
+  background: var(--sidebar);
+  color: var(--sidebar-text);
+  border: 0;
+  border-radius: 12px;
+}
+
+/* 
+  Styles links inside the sidebar.
+  The links use the same light colour as the sidebar text.
+*/
+.sidebar a {
+  color: var(--sidebar-text);
+  text-decoration: none;
+}
+
+/* 
+  Adds an underline when the user hovers over sidebar links.
+*/
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+/* 
+  Styles the horizontal line inside the sidebar.
+*/
+.sidebar-hr {
+  border-color: rgba(233, 231, 255, 0.2);
+}
+
+/* 
+  Styles the main heading with your name.
+*/
+.name {
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+/* 
+  Styles the subtitle under your name.
+*/
+.role {
+  margin-top: 6px;
+  color: rgba(233, 231, 255, 0.8);
+  font-size: 0.95rem;
+}
+
+/* 
+  Styles headings inside the sidebar, for example:
+  Menu, Personal Details, and Contact.
+*/
+.sidebar-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--sidebar-text);
+}
+
+/* 
+  Removes default bullets and spacing from sidebar lists.
+*/
+.sidebar-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* 
+  Styles each item in the sidebar list.
+  Adds spacing and a light divider line between items.
+*/
+.sidebar-list li {
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(233, 231, 255, 0.12);
+}
+
+/* 
+  Removes the divider under the last sidebar item
+  so the list ends neatly.
+*/
+.sidebar-list li:last-child {
+  border-bottom: 0;
+}
+
+/* 
+  Makes labels like "Full Name:" stand out more.
+*/
+.label {
+  font-weight: 700;
+  color: rgba(233, 231, 255, 0.9);
+}
+
+/* 
+  Styles the numbered menu list in the sidebar.
+*/
+.menu {
+  margin: 0;
+  padding-left: 18px;
+}
+
+/* 
+  Adds a bit of spacing between menu items.
+*/
+.menu li {
+  margin: 6px 0;
+}
+
+/* 
+  Creates the circular frame around the profile photo.
+  overflow: hidden keeps the image inside the circle.
+*/
+.avatar-wrap {
+  width: 140px;
+  height: 140px;
+  border-radius: 999px;
+  overflow: hidden;
+  border: 4px solid rgba(233, 231, 255, 0.35);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* 
+  Makes the image fill the frame neatly without stretching.
+*/
+.avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 
+  Styles the white content cards on the right side.
+*/
+.content {
+  border: 0;
+  border-radius: 12px;
+  background: var(--paper);
+}
+
+/* 
+  Styles the main section titles such as:
+  Bio, Skills, Education, and Work Experience.
+*/
+.content-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin-bottom: 14px;
+  color: #111827;
+}
+
+/* 
+  Styles smaller headings inside sections,
+  such as Hard Skills, Soft Skills, and Tech Skills.
+*/
+.subheading {
+  font-size: 1.02rem;
+  font-weight: 800;
+  color: #111827;
+}
+
+/* 
+  Styles secondary text, for example institution names.
+*/
+.muted {
+  color: var(--muted);
+}
+
+/* 
+  Styles regular bullet lists in the main content.
+*/
+.clean-list {
+  margin: 0;
+  padding-left: 18px;
+}
+
+/* 
+  Adds vertical spacing between bullet points.
+*/
+.clean-list li {
+  margin: 6px 0;
+}
+
+/* 
+  Creates space between timeline items in the Education
+  and Work Experience sections.
+*/
+.timeline {
+  display: grid;
+  gap: 14px;
+}
+
+/* 
+  Styles each timeline box.
+*/
+.timeline-item {
+  padding: 12px;
+  border: 1px solid var(--border-soft);
+  border-radius: 10px;
+}
+
+/* 
+  Puts the title on the left and the date on the right.
+*/
+.timeline-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+/* 
+  Styles the pill-shaped date labels.
+*/
+.date-pill {
+  font-size: 0.8rem;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--date-bg);
+  color: var(--date-text);
+  white-space: nowrap;
+}
+
+/* 
+  Makes the Bio easier to read by limiting line width
+  and adding more space between lines and paragraphs.
+*/
+#bio p {
+  max-width: 65ch;
+  line-height: 1.75;
+  margin-bottom: 18px;
+}
+
+/* 
+  Removes extra bottom space under the last Bio paragraph.
+*/
+#bio p:last-child {
+  margin-bottom: 0;
+}
